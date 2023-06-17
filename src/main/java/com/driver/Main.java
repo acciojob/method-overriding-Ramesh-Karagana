@@ -5,17 +5,17 @@ import java.security.PublicKey;
 public class Main {
 
     public static class A{
-        void meth()
+        public String meth()
         {
-            System.out.println("Invoking method from class A");
+            return "Invoking method from class A";
         }
     }
     public static  class B extends A
     {
 
-        void meth()
+        public String meth()
         {
-            System.out.println("Method is overridden in Extendend class B");
+            return "Method is overridden in Extendend class B";
         }
 
 
