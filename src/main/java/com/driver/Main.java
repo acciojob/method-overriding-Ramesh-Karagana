@@ -10,15 +10,20 @@ public class Main {
     }
     public static  class B extends A
     {
+
         void meth()
         {
             System.out.println("Method is overridden in Extendend class B");
         }
+
     }
     public static void main(String[] args)
     {
-        B obj = new B();
+        A obj = new A();
         obj.meth();
+
+        B ob = new B();
+        ob.meth();
 
     }
   
