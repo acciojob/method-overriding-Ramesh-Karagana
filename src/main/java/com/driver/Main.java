@@ -1,8 +1,10 @@
 package com.driver;
 
+import java.security.PublicKey;
+
 public class Main {
 
-    static class A{
+    public static class A{
         void meth()
         {
             System.out.println("Invoking method from class A");
@@ -16,12 +18,12 @@ public class Main {
             System.out.println("Method is overridden in Extendend class B");
         }
 
+
     }
     public static void main(String[] args)
     {
-        A obj = new A();
+        B obj=new B();
         obj.meth();
-
         B ob = new B();
         ob.meth();
 
